@@ -9,6 +9,17 @@
     line-height: 1.4em;
 }
 
+body{
+    background-color: #e5e5e5;
+    background-image: 
+    linear-gradient(45deg, #dcdcdc 25%, transparent 25%),
+    linear-gradient(-45deg, #dcdcdc 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #dcdcdc 75%),
+    linear-gradient(-45deg, transparent 75%, #dcdcdc 75%);
+    background-size: 40px 40px;
+    min-height: 100vh;
+}
+
 .header{
     display: flex;
     padding: 12px;
@@ -21,9 +32,48 @@
     width: 80px;
     margin: 20px;
     box-shadow:  5px 2px 6px black;
+    border-radius: 7px;
 }
 
 .header h1{
-    color: #fff;
-    
+    color: #fff;   
+}
+
+.scan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
+}
+
+.scan h1{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: rgb(17, 86, 102);
+}
+
+#myVideo{
+    width: 500px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(17, 86, 102);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+}
+
+#myBtn{
+    display: flex;
+    margin-top: 20px;
+    color: rgb(17, 86, 102);
+    border-radius: 10px;
+    border-color: rgb(17, 86, 102);
+    width: 142px;
+    font-size: 16px;
+    cursor: pointer;
 }
