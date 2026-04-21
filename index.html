@@ -6,24 +6,376 @@
     <title>OverTime System</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-
-<!-- Parte de header onde vem apenas a imagem e o cabeçalho -->
 <body>
-    <header class="header">
-        <img src="./imgs/o-que-significa-esse-meme-reflexivo-ai-de-todos-os-caminhos-v0-ujfn49e8c0qf1.webp" alt="Imagem do coelho com relogio">
-        <h1>OverTime System</h1>
-    </header>
+    <div class="page-shell">
+        <header class="topbar">
+            <a class="brand" href="#hero">
+                <img src="./imgs/o-que-significa-esse-meme-reflexivo-ai-de-todos-os-caminhos-v0-ujfn49e8c0qf1.webp" alt="Mascote do sistema">
+                <div>
+                    <span class="brand-kicker">Rede de cuidado facial</span>
+                    <strong>OverTime Cuidado Presente</strong>
+                </div>
+            </a>
 
+            <nav class="topnav" aria-label="Navegação principal">
+                <a href="#care">Como funciona</a>
+                <a href="#privacy">Proteção</a>
+                <a href="#register">Cadastro</a>
+                <a href="#alerts">Alertas</a>
+            </nav>
+        </header>
 
-<!-- Parte do Face scam -->
-<section  class="scan">
+        <main>
+            <section class="hero reveal" id="hero">
+                <div class="hero-copy">
+                    <p class="eyebrow">Cuidado contínuo para moradia individual</p>
+                    <h1>Se você mora sozinho, sua confirmação facial pode acionar ajuda em até 48 horas.</h1>
+                    <p class="hero-text">
+                        O OverTime foi pensado para pessoas que vivem sozinhas em Teresópolis/RJ e precisam
+                        de um sinal simples de presença. Quando a confirmação facial deixa de acontecer,
+                        o sistema encaminha a ausência para o contato de emergência e, quando autorizado,
+                        para a rede pública de apoio.
+                    </p>
 
-    <h1>FACE SCAN</h1>
-    <video id="myVideo"></video>
-    <button id="myBtn">Acessar Webcam</button>
-    
-    <script src="./js/scripts.js" async></script>
-</section>
-    
+                    <div class="hero-actions">
+                        <a class="button primary" href="#register">Fazer cadastro</a>
+                        <a class="button secondary" href="#privacy">Entender a proteção</a>
+                    </div>
+
+                    <ul class="hero-highlights">
+                        <li><span>01</span>Endereço conferido apenas em Teresópolis, Rio de Janeiro.</li>
+                        <li><span>02</span>Reconhecimento facial periódico para confirmar bem-estar.</li>
+                        <li><span>03</span>Acionamento automático se você ficar 48 horas sem reconhecimento.</li>
+                    </ul>
+                </div>
+
+                <aside class="hero-panel reveal">
+                    <div class="panel-badge">Atendimento em Teresópolis/RJ</div>
+                    <h2>Uma rotina de cuidado para quem não tem alguém em casa numa emergência</h2>
+                    <p>
+                        O cadastro combina identificação facial, confirmação de residência e contatos de apoio.
+                        O objetivo não é controlar acesso a condomínio nem portaria: é perceber ausência de rotina
+                        e avisar a rede certa quando o titular deixa de responder.
+                    </p>
+
+                    <div class="mini-grid">
+                        <article class="mini-card">
+                            <strong>Endereço validado</strong>
+                            <span>O CEP precisa apontar para Teresópolis/RJ e o endereço precisa existir.</span>
+                        </article>
+
+                        <article class="mini-card">
+                            <strong>Presença recorrente</strong>
+                            <span>A confirmação facial atualiza a última vez em que você foi visto pelo sistema.</span>
+                        </article>
+
+                        <article class="mini-card">
+                            <strong>Rede de apoio</strong>
+                            <span>Você define o contato de emergência e decide se o alerta alcança órgãos públicos.</span>
+                        </article>
+
+                        <article class="mini-card">
+                            <strong>Privacidade</strong>
+                            <span>Revogação, exclusão e trilha de eventos continuam disponíveis no seu cadastro.</span>
+                        </article>
+                    </div>
+                </aside>
+            </section>
+
+            <section class="section reveal" id="care">
+                <div class="section-heading">
+                    <p class="eyebrow">Como funciona</p>
+                    <h2>O foco é acompanhamento de quem mora sozinho.</h2>
+                    <p>
+                        Toda a jornada foi simplificada para o público final: validar residência,
+                        cadastrar a biometria, definir quem deve ser acionado e acompanhar a última confirmação.
+                    </p>
+                </div>
+
+                <div class="cards three">
+                    <article class="card">
+                        <span class="card-tag">1. Cadastro protegido</span>
+                        <h3>Você informa identidade, residência e rede de apoio</h3>
+                        <p>
+                            Nome completo, CPF válido, residência em Teresópolis/RJ e um contato de emergência entram no mesmo fluxo.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Nome com pelo menos um nome e um sobrenome.</li>
+                            <li>CPF verificado antes da conclusão do cadastro.</li>
+                            <li>Endereço cruzado com validação de CEP e cidade.</li>
+                        </ul>
+                    </article>
+
+                    <article class="card">
+                        <span class="card-tag">2. Presença recorrente</span>
+                        <h3>A confirmação facial renova sua janela de segurança</h3>
+                        <p>
+                            Cada reconhecimento bem-sucedido registra a última confirmação de bem-estar e reinicia a contagem de 48 horas.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Captura facial feita com a própria webcam.</li>
+                            <li>Histórico de presença ligado ao cadastro ativo.</li>
+                            <li>Atualização automática da última vez reconhecida.</li>
+                        </ul>
+                    </article>
+
+                    <article class="card caution-card">
+                        <span class="card-tag">3. Acionamento automático</span>
+                        <h3>Ausência prolongada vira alerta de cuidado</h3>
+                        <p>
+                            Se não houver reconhecimento em até 48 horas, o sistema prepara o aviso para o contato de emergência
+                            e, quando autorizado, para a rede pública de apoio da cidade.
+                        </p>
+                        <ul class="feature-list">
+                            <li>Contato de emergência com telefone e relação obrigatórios.</li>
+                            <li>Painel com alertas automáticos disparados.</li>
+                            <li>Regra pensada para moradia individual, não para portaria.</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section reveal" id="privacy">
+                <div class="section-heading">
+                    <p class="eyebrow">Proteção de dados</p>
+                    <h2>Biometria, endereço e contato de emergência exigem autorização clara.</h2>
+                    <p>
+                        O cadastro precisa deixar claro por que a biometria existe, quem será acionado em caso de ausência
+                        e como revogar o consentimento ou excluir os dados quando você quiser.
+                    </p>
+                </div>
+
+                <div class="checklist">
+                    <article class="legal-item">
+                        <span>Consentimento</span>
+                        <p>O titular precisa autorizar a biometria e o protocolo de alerta de 48 horas.</p>
+                    </article>
+
+                    <article class="legal-item">
+                        <span>Endereço conferido</span>
+                        <p>O cadastro é aceito apenas quando a residência é confirmada em Teresópolis/RJ.</p>
+                    </article>
+
+                    <article class="legal-item">
+                        <span>Exclusão</span>
+                        <p>Revogação de consentimento e exclusão do cadastro seguem disponíveis no painel.</p>
+                    </article>
+
+                    <article class="legal-item">
+                        <span>Acionamento autorizado</span>
+                        <p>O titular escolhe se o alerta vai apenas para o contato ou também para apoio público.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section reveal" id="register">
+                <div class="section-heading">
+                    <p class="eyebrow">Cadastro</p>
+                    <h2>Confirme sua residência, biometria e rede de apoio.</h2>
+                    <p>
+                        O cadastro exige nome completo, CPF válido, residência real em Teresópolis/RJ e pelo menos
+                        um contato de emergência. Sem esses dados, a regra de 48 horas não pode ser ativada.
+                    </p>
+                </div>
+
+                <div class="pilot-grid">
+                    <form class="card form-card" id="residentForm">
+                        <h3>Cadastro principal</h3>
+                        <div class="server-inline">
+                            <span class="status-pill" id="apiStatus">serviço offline</span>
+                            <p class="server-note">O cadastro só é concluído quando a validação do endereço, da biometria e da regra de alerta estiver disponível.</p>
+                        </div>
+                        <div class="form-grid">
+                            <label class="field">
+                                <span>Nome completo</span>
+                                <input type="text" name="name" placeholder="Ex.: Maria Aparecida Souza" autocomplete="name" required>
+                            </label>
+
+                            <label class="field">
+                                <span>CPF</span>
+                                <input type="text" name="cpf" placeholder="000.000.000-00" inputmode="numeric" autocomplete="off" required>
+                            </label>
+
+                            <label class="field">
+                                <span>CEP</span>
+                                <input type="text" name="postalCode" placeholder="00000-000" inputmode="numeric" autocomplete="postal-code" required>
+                            </label>
+
+                            <label class="field">
+                                <span>Cidade atendida</span>
+                                <input id="cityStateDisplay" type="text" value="Teresópolis / RJ" readonly>
+                            </label>
+
+                            <label class="field full">
+                                <span>Logradouro</span>
+                                <input type="text" name="street" placeholder="Rua, avenida ou estrada" autocomplete="street-address" required>
+                            </label>
+
+                            <label class="field">
+                                <span>Número</span>
+                                <input type="text" name="number" placeholder="Ex.: 145" autocomplete="address-line2" required>
+                            </label>
+
+                            <label class="field">
+                                <span>Bairro</span>
+                                <input type="text" name="neighborhood" placeholder="Ex.: Várzea" autocomplete="address-level3" required>
+                            </label>
+
+                            <div class="field full">
+                                <span>Status do endereço</span>
+                                <p class="field-note" id="addressStatus">Informe um CEP de Teresópolis/RJ para iniciar a validação do endereço.</p>
+                            </div>
+
+                            <label class="field full">
+                                <span>Contato de emergência</span>
+                                <input type="text" name="emergencyContactName" placeholder="Ex.: Carlos Eduardo Souza" autocomplete="name" required>
+                            </label>
+
+                            <label class="field">
+                                <span>Telefone do contato</span>
+                                <input type="text" name="emergencyContactPhone" placeholder="(21) 99999-9999" inputmode="tel" autocomplete="tel" required>
+                            </label>
+
+                            <label class="field">
+                                <span>E-mail do contato (opcional)</span>
+                                <input type="email" name="emergencyContactEmail" placeholder="contato@exemplo.com" autocomplete="email">
+                            </label>
+
+                            <label class="field full">
+                                <span>Relação com você</span>
+                                <input type="text" name="emergencyContactRelationship" placeholder="Ex.: Irmão, amiga, vizinha" required>
+                            </label>
+
+                            <label class="field full">
+                                <span>Quem deve ser acionado se você ficar 48 horas sem reconhecimento?</span>
+                                <select name="alertDestination" required>
+                                    <option value="">Selecione</option>
+                                    <option value="contato_emergencia">Somente o contato de emergência</option>
+                                    <option value="contato_e_orgao_publico">Contato de emergência e órgão público de apoio</option>
+                                </select>
+                            </label>
+
+                            <label class="field full">
+                                <span>Foto inicial de referência</span>
+                                <input id="photoInput" type="file" name="photo" accept="image/*" required>
+                            </label>
+
+                            <label class="field full consent-row">
+                                <input id="consentInput" type="checkbox" name="consent" required>
+                                <span>Autorizo o uso da biometria facial, a validação do meu endereço em Teresópolis/RJ e o acionamento escolhido caso eu fique 48 horas sem reconhecimento.</span>
+                            </label>
+                        </div>
+
+                        <div class="form-actions">
+                            <button class="button primary" type="submit">Concluir cadastro</button>
+                            <button class="button ghost" type="reset" id="clearFormBtn">Limpar formulário</button>
+                        </div>
+
+                        <p class="form-note" id="formStatus">Preencha seus dados para ativar o protocolo de cuidado.</p>
+                    </form>
+
+                    <div class="pilot-side">
+                        <article class="card camera-card">
+                            <div class="camera-head">
+                                <div>
+                                    <p class="eyebrow">Confirmação de presença</p>
+                                    <h3>Atualize sua última verificação facial</h3>
+                                </div>
+                                <span class="status-pill" id="cameraState">offline</span>
+                            </div>
+
+                            <video id="myVideo" playsinline muted></video>
+
+                            <div class="camera-actions">
+                                <button class="button primary" id="startCameraBtn" type="button">Abrir câmera</button>
+                                <button class="button secondary" id="stopCameraBtn" type="button">Encerrar</button>
+                                <button class="button ghost" id="simulateRecognitionBtn" type="button">Fazer reconhecimento agora</button>
+                            </div>
+
+                            <p class="camera-note" id="recognitionStatus">Sua rotina fica protegida quando o reconhecimento facial é atualizado antes da janela de 48 horas.</p>
+                        </article>
+
+                        <article class="card registry-card">
+                            <div class="registry-head">
+                                <h3>Cadastros ativos</h3>
+                                <span id="residentCount">0 cadastros</span>
+                            </div>
+
+                            <div id="residentPreview" class="resident-preview empty">
+                                <p>Nenhum cadastro ativo ainda.</p>
+                            </div>
+                        </article>
+
+                        <article class="card registry-card">
+                            <div class="registry-head">
+                                <h3>Alertas automáticos</h3>
+                                <span id="emergencyAlertCount">0 alertas</span>
+                            </div>
+
+                            <p class="field-note registry-note">Use o processamento manual para conferir imediatamente os envios configurados para a sua operação.</p>
+
+                            <div class="compact-actions">
+                                <button class="button ghost compact-button" id="processAlertsBtn" type="button">Processar envios pendentes</button>
+                            </div>
+
+                            <div id="emergencyAlerts" class="audit-list empty">
+                                <p>Nenhum alerta automático registrado.</p>
+                            </div>
+                        </article>
+
+                        <article class="card registry-card">
+                            <div class="registry-head">
+                                <h3>Histórico de privacidade</h3>
+                                <span id="auditCount">0 eventos</span>
+                            </div>
+
+                            <div id="privacyTrail" class="audit-list empty">
+                                <p>Nenhum evento de privacidade registrado ainda.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section reveal" id="alerts">
+                <div class="section-heading">
+                    <p class="eyebrow">Fluxo de alerta em 48 horas</p>
+                    <h2>O cuidado avança em etapas simples e objetivas.</h2>
+                </div>
+
+                <div class="timeline">
+                    <article class="timeline-step">
+                        <span>1</span>
+                        <h3>Cadastro confirmado</h3>
+                        <p>Seu nome, CPF, endereço e contato de emergência passam pela validação inicial.</p>
+                    </article>
+
+                    <article class="timeline-step">
+                        <span>2</span>
+                        <h3>Rotina acompanhada</h3>
+                        <p>Cada reconhecimento facial reinicia a janela de segurança do seu acompanhamento.</p>
+                    </article>
+
+                    <article class="timeline-step">
+                        <span>3</span>
+                        <h3>48 horas sem resposta</h3>
+                        <p>Quando não há nova confirmação facial, o sistema registra a ausência como alerta.</p>
+                    </article>
+
+                    <article class="timeline-step">
+                        <span>4</span>
+                        <h3>Rede acionada</h3>
+                        <p>O contato de emergência e, quando autorizado, a rede pública de apoio recebem o acionamento.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            Cadastro voltado para moradia individual em Teresópolis/RJ. O acionamento automático depende da validação do endereço, da autorização do titular e do cadastro correto da rede de apoio.
+        </footer>
+    </div>
+
+    <script src="./js/scripts.js"></script>
 </body>
 </html>

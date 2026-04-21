@@ -1,0 +1,17 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run OverTime Local Server",
+			"type": "shell",
+			"command": "dotnet",
+			"args": [
+				"run",
+				"--project",
+				"server/OverTime.FaceAccess.Server.csproj"
+			],
+			"isBackground": true,
+			"group": "build"
+		}
+	]
+}
